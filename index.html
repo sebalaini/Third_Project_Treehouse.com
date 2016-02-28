@@ -4,14 +4,81 @@
   <meta charset="utf-8">
     <title>Sebastiano Laini's Form</title>
       <link rel="stylesheet" href="css/normalize.css">
-      <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/responsive.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	
+
+	<form action="index.html" method="post">
+        
+    <h1>Signup for our newsletter</h1>
+    	<p>get the latest news on how your code is doing right in your inbox</p>
+        
+  <fieldset>
+        
+    <legend>Contact Information</legend>
+          
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="user_name">
+          
+      <label for="mail">Email Adress</label>
+      <input type="email" id="mail" name="user_email">
+          
+      <label for="phone">Phone Numer</label>
+      <input type="phone" id="phone" name="user_phone">
+          
+			<label for="street">Street Adress</label>
+      <input type="text" id="street" name="user_street">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="user_city">
+
+      <label for="state">State</label>
+      <select id="state" name="user_state">
+							
+				<option value="spain">Spain</option>
+        <option value="italy">Italy</option>
+        <option value="france">France</option>
+        <option value="germany">Germany</option>
+        <option value="uk">UK</option>
+
+			</select>
+
+      <label for="zipcode">Zip Code</label>
+      <input type="text" id="zipcode" name="zipcode">
+
+  </fieldset>
+  <fieldset>
+          
+    <legend>Newsletter</legend>
+          
+      <label>Select the newsletter you would like to receive</label>
+
+      <input type="checkbox" id="htmlnews" value="newsletter_htmlnews" name="htmlnews"><label class="light" for="htmlnews">HTML News</label><br>
+          
+     	<input type="checkbox" id="cssnews" value="newsletter_cssnews" name="cssnews"><label class="light" for="cssnews">CSS News</label><br>
+          
+      <input type="checkbox" id="javascriptnews" value="newsletter_javascriptnews" name="javascriptnews"><label class="light" for="javascriptnews">JavaScript News</label>
+          
+
+			<label>Newsletter format</label>
+          
+      <input type="radio" id="html" value="format_html" name="format"><label class="light" for="html">HTML</label><br>
+          
+      <input type="radio" id="plain text" value="format_plain text" name="format"><label class="light" for="plain text">Plain text</label>
+
+			<label for="other">Other topics you'd like to hear about</label>
+			<textarea id="other"></textarea>
+
+
+	</fieldset>
+
+    <button type="submit">Sign Up</button>
+        
+      </form>
 
 
 <footer>
