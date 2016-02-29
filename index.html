@@ -11,10 +11,12 @@
 </head>
 
 <body>
+	
+	<h1>THE CODE REVIEW</h1>
 
-	<form action="index.html" method="post">
+	<form action="index.html" method="post" class="contact">
         
-    <h1>Signup for our newsletter</h1>
+    <h2>Signup for our newsletter</h1>
     	<p>get the latest news on how your code is doing right in your inbox</p>
         
   <fieldset>
@@ -38,7 +40,8 @@
 
       <label for="state">State</label>
       <select id="state" name="user_state">
-							
+				
+				<option value="" disabled selected hidden>Select your state</option>			
 				<option value="spain">Spain</option>
         <option value="italy">Italy</option>
         <option value="france">France</option>
@@ -47,11 +50,25 @@
 
 			</select>
 
+			<label for="language">Preferred Language</label>
+      <select id="language" name="user_language">
+
+				<option value="" disabled selected hidden>Select your language</option>
+      	<option value="spanish">Spanish</option>
+        <option value="italian">Italian</option>
+        <option value="french">French</option>
+        <option value="german">German</option>
+        <option value="English">English</option>
+
+			</select>
+
       <label for="zipcode">Zip Code</label>
       <input type="text" id="zipcode" name="zipcode">
 
-  </fieldset>
-  <fieldset>
+  	</fieldset>
+  </form>
+	<form action="index.html" method="post" class="news">
+  	<fieldset>
           
     <legend>Newsletter</legend>
           
@@ -61,7 +78,11 @@
           
      	<input type="checkbox" id="cssnews" value="newsletter_cssnews" name="cssnews"><label class="light" for="cssnews">CSS News</label><br>
           
-      <input type="checkbox" id="javascriptnews" value="newsletter_javascriptnews" name="javascriptnews"><label class="light" for="javascriptnews">JavaScript News</label>
+      <input type="checkbox" id="javascriptnews" value="newsletter_javascriptnews" name="javascriptnews"><label class="light" for="javascriptnews">JavaScript News</label><br>
+
+      <input type="checkbox" id="pythonnews" value="newsletter_python" name="pythonnews"><label class="light" for="pythonnews">Python News</label><br>
+
+      <input type="checkbox" id="rubynews" value="newsletter_ruby" name="rubynews"><label class="light" for="rubynews">Ruby News</label>
           
 
 			<label class="newsletter">Newsletter format</label>
@@ -75,10 +96,13 @@
 
 
 	</fieldset>
-
-    <button type="submit">Sign Up</button>
         
-      </form>
+  </form>
+	<form action="index.html" method="post">
+  
+  <button type="submit">Sign Up</button>
+
+	</form>
 
 <footer>	
 	<p class="foot">&copy; Sebastiano Laini</p>

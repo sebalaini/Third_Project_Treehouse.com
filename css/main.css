@@ -17,10 +17,21 @@ form {
   max-width: 500px;
 }
 
-h1 {
+h1,
+h2 {
   margin-bottom: 10px;
   padding: 5px;
   text-align: center;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  background-color: #384047;
+  margin: 0 auto;
+  margin-top: 0;
+  padding-top: 10px;
+  max-width: 500px;
 }
 
 p {
@@ -50,7 +61,15 @@ select {
   margin-bottom: 30px;
 }
 
-input[placeholder] {
+input:-ms-input-placeholder {
+  text-align: right;
+}
+
+input::-moz-placeholder {
+  text-align: right;
+}
+
+input::-webkit-input-placeholder {
   text-align: right;
 }
 
@@ -70,16 +89,14 @@ select {
 
 button {
   padding: 19px 39px 18px 39px;
-  color: #FFF;
+  color: #fff;
   background-color: #4bc970;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  border: 1.5px solid #3ac162;
   margin-bottom: 10px;
 }
 
@@ -109,7 +126,13 @@ label.light {
   display: inline;
 }
 
+button[type="submit"]:hover {
+  background-color: #2d3944;
+  border: 1.5px solid black; 
+  }
+
 .foot {
   border-bottom: none;
 }
+
 
