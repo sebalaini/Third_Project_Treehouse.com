@@ -50,6 +50,14 @@ select {
   margin-bottom: 30px;
 }
 
+input[placeholder] {
+  text-align: right;
+}
+
+input:focus {
+  background-color: #9be4e6;
+}
+
 input[type="radio"],
 input[type="checkbox"] {
   margin: 0 4px 8px 0;
@@ -78,6 +86,8 @@ button {
 fieldset {
   margin-bottom: 30px;
   border: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 legend {
@@ -98,5 +108,4 @@ label.light {
   font-weight: 300;
   display: inline;
 }
-
 
