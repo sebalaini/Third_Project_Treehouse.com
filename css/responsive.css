@@ -1,5 +1,9 @@
 @media screen and (min-width: 768px) {
 
+/**********
+GENERAL LAYOUT
+**********/
+
 h1,
 form {
 	max-width: 1000px;
@@ -11,9 +15,22 @@ label {
 	height: 55px;
 }
 
+.signup,
+.news,
+.contact {
+	background-color: #fff;
+}
+
+
+
+/**********
+INPUT LAYOUT
+**********/
+
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
+input[type="password"],
 select {
 	width: 80%;
 }
@@ -48,7 +65,6 @@ label.light {
 textarea {
 	width: 100%;
 }
-
 
 
 }

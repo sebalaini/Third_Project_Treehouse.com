@@ -1,3 +1,7 @@
+/**********
+GENERAL LAYOUT
+**********/
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -42,9 +46,45 @@ p {
   margin-bottom: 5px;
 }
 
+.foot {
+  border-bottom: none;
+}
+
+.signup,
+.contact {
+  background-color: #C9FCEB;
+}
+
+.news {
+  background-color: #e9f6fc;
+}
+
+
+
+/**********
+INPUT LAYOUT
+**********/
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  border-top: 2px solid #384047;
+  width: 100%;
+}
+
 input[type="text"],
 input[type="email"],
-input[type="phone"],
+input[type="tel"],
+input[type="password"],
+input[type="confirm_password"],
 textarea,
 select {
   border: none;
@@ -75,6 +115,7 @@ input::-webkit-input-placeholder {
 
 input:focus {
   background-color: #9be4e6;
+  border: 2px solid #384047;
 }
 
 input[type="radio"],
@@ -86,6 +127,23 @@ select {
   padding: 10px;
   height: 50px;
 }
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+
+
+/**********
+BUTTON LAYOUT
+**********/
 
 button {
   padding: 19px 39px 18px 39px;
@@ -100,39 +158,10 @@ button {
   margin-bottom: 10px;
 }
 
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-legend {
-  font-size: 1.4em;
-  margin-bottom: 10px;
-  padding-top: 15px;
-  border-top: 2px solid #384047;
-  width: 100%;
-}
-
-label {
-  display: block;
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
-}
-
 button[type="submit"]:hover {
   background-color: #2d3944;
   border: 1.5px solid black; 
   }
 
-.foot {
-  border-bottom: none;
-}
 
 

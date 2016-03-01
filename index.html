@@ -16,7 +16,7 @@
 
 	<form action="index.html" method="post" class="contact">
         
-    <h2>Signup for our newsletter</h1>
+    <h2>Signup for our newsletter</h2>
     	<p>get the latest news on how your code is doing right in your inbox</p>
         
   <fieldset>
@@ -29,8 +29,8 @@
       <label for="mail">Email Adress</label>
       <input type="email" placeholder="Required" id="mail" name="user_email">
           
-      <label for="phone">Phone Numer</label>
-      <input type="phone" id="phone" name="user_phone">
+      <label for="tel">Phone Numer</label>
+      <input type="tel" id="tel" name="user_tel">
           
 			<label for="street">Street Adress</label>
       <input type="text" id="street" name="user_street">
@@ -67,6 +67,7 @@
 
   	</fieldset>
   </form>
+
 	<form action="index.html" method="post" class="news">
   	<fieldset>
           
@@ -89,18 +90,36 @@
           
       <input type="radio" id="html" value="format_html" name="format"><label class="light" for="html">HTML</label><br>
           
-      <input type="radio" id="plain_text" value="format_plain text" name="format"><label class="light" for="plain text">Plain text</label>
+      <input type="radio" id="plain_text" value="format_plain text" name="format"><label class="light" for="plain_text">Plain text</label>
 
 			<label class="other" for="other">Other topics you'd like to hear about</label>
 			<textarea id="other"></textarea>
 
+		</fieldset>
+  </form>
+
+<form action="index.html" method="post" class="signup">
+  <fieldset>
+    
+    <legend>SignUp</legend>
+          
+      <label for="usrname">User Name</label>
+      <input type="text" id="usrname" name="usrname">
+          
+      <label for="password">Password</label>
+      <input type="password" id="password" name="user_password">
+          
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="user_confirm_password">
 
 	</fieldset>
-        
-  </form>
-	<form action="index.html" method="post">
+</form>
+
+<form action="index.html" method="post">
+
+	<p class="foot"><input type="checkbox" name="terms" required=""> I accept the <u>Terms and Conditions</u></p>
   
-  <button type="submit">Sign Up</button>
+  	<button type="submit">Sign Up</button>
 
 	</form>
 
