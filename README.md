@@ -1,4 +1,3 @@
 # Third_Project_Treehouse.com
-Third_Project_Treehouse.com
 
-Create a responsive Form web page from the images
+The third project at Treehouse.com, in this project i have to create a responsive Form web page from cero based on a mockup
