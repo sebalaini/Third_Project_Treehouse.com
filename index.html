@@ -14,7 +14,7 @@
 	
 	<h1>THE CODE REVIEW</h1>
 
-	<form action="index.html" method="post"> 
+	<form id="form" action="index.html" method="post"> 
         
     <h2>Signup for our newsletter</h2>
     	<p>get the latest news on how your code is doing right in your inbox</p>
@@ -25,10 +25,10 @@
     <legend>Contact Information</legend>
           
       <label for="name">Full Name</label>
-      <input type="text" placeholder="Required" id="name" name="name">
+      <input type="text" placeholder="Required" required id="name" name="name">
           
       <label for="mail">Email Adress</label>
-      <input type="email" placeholder="Required" id="mail" name="mail">
+      <input type="email" placeholder="Required" required id="mail" name="mail">
           
       <label for="tel">Phone Numer</label>
       <input type="tel" id="tel" name="tel">
@@ -122,8 +122,9 @@
 
 </form>
 
-<footer>	
-	<p class="foot">&copy; Sebastiano Laini</p>
-		</footer>
+  <footer>	
+    <p class="foot">&copy; Sebastiano Laini</p>
+	</footer>
+
 	</body>
 </html>
